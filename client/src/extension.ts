@@ -6,7 +6,7 @@
 
 import * as path from 'path';
 
-import { workspace, Disposable, ExtensionContext } from 'vscode';
+import { languages, workspace, Disposable, ExtensionContext, CompletionItemProvider, TextDocument, Position, CancellationToken, CompletionItem } from 'vscode';
 import { LanguageClient, LanguageClientOptions, SettingMonitor, ServerOptions, TransportKind } from 'vscode-languageclient';
 
 export function activate(context: ExtensionContext) {
